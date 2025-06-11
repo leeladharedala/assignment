@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="out">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/function3.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/function1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/function2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/out/lambda_function.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
