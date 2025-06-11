@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "mock_energy_data" {
-  bucket = "mockenergy-data"
+  bucket = "mock--energy--data"
 }
 
 resource "aws_s3_bucket" "glue_script_bucket" {
-  bucket = "energy-glue-script"
+  bucket = "energy--glue--script"
 }
 
 resource "aws_s3_object" "glue_script" {

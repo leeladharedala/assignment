@@ -17,7 +17,7 @@ max_sites = 100
 num_sites = random.randint(min_sites, max_sites)
 print(f"Generating {num_sites} site_ids...")
 current_time = str(datetime.now())
-output_path = f"s3://mockenergy-data/rawdata/{current_time}"
+output_path = f"s3://mock--energy--data/rawdata/{current_time}"
 
 
 schema = StructType([
