@@ -1,0 +1,7 @@
+faker
+boto3
+pytz
+FastAPI
+mangum
+Pandas
+PySpark
