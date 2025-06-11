@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "mock_energy_data" {
-  bucket = "fake-energy-data"
+  bucket = "mockenergy-data"
 }
 
 resource "aws_s3_bucket" "glue_script_bucket" {
@@ -13,14 +13,14 @@ resource "aws_s3_bucket" "glue_script_bucket" {
 resource "aws_s3_object" "glue_script" {
   bucket = aws_s3_bucket.glue_script_bucket.id
   key    = "data_generator.py"
-  source = "src/glue/data_generator.py"
+  source = "../src/glue/data_generator.py"
   etag   = filemd5("../src/glue/data_generator.py")
 }
 
 resource "aws_s3_object" "glue_dependencies" {
   bucket = aws_s3_bucket.glue_script_bucket.id
-  key    = "dependencies/Faker-36.1.0-py3-none-any.whl"
-  source = "dependencies/Faker-36.1.0-py3-none-any.whl"
+  key    = "Faker-36.1.0-py3-none-any.whl"
+  source = "../dependencies/Faker-36.1.0-py3-none-any.whl"
   etag   = filemd5("../dependencies/Faker-36.1.0-py3-none-any.whl")
 }
 
