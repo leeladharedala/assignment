@@ -7,6 +7,8 @@ This project implements a **real-time data pipeline** for a mock renewable energ
 
 **Infrastructure** is deployed automatically using **Terraform** through a **GitHub Actions CI/CD pipeline**.
 
+Once its deployed wait for 5mins to get glue-job initiated automatically 
+
 ---
 
 ## Features
