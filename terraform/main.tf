@@ -134,7 +134,7 @@ resource "aws_sns_topic" "energy_anomaly_alerts" {
 resource "aws_sns_topic_subscription" "email_alert" {
   topic_arn = aws_sns_topic.energy_anomaly_alerts.arn
   protocol  = "email"
-  endpoint  = "leeladharedala@gmail.com"
+  endpoint  = "leeladharedala90@gmail.com"
 }
 
 resource "aws_iam_policy" "lambda_policy" {
