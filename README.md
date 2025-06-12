@@ -63,6 +63,24 @@ After deployment, Terraform provides:
 
 ---
 
+## Sample Output
+```
+anomalies_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/anomalies"
+base_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/"
+negative_energy_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/net_negative_energy"
+records_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/records"
+```
+---
+
+## Sample HTTP APIs To Test
+**Change to current base_url**
+```
+records_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/records/site_id009?start=1973-05-19T21:11:59.132412+00:00&end=1972-02-18T19:22:32.555759+00:00"
+anomalies_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/anomalies/site_id009"
+negative_energy_url = "https://t48z5pl7m4.execute-api.us-east-1.amazonaws.com/net_negative_energy"
+```
+---
+
 ## SNS Email Configuration
 
 **To receive anomaly alerts by email:**
